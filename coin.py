@@ -1,6 +1,6 @@
 from random import choice
 
-
+#ss
 def showIt():
     showIt = input("want to see result of each flip? (y/n)").lower()
     if showIt not in ["y","n"]:
