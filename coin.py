@@ -2,7 +2,7 @@ from random import choice
 
 
 def showIt():
-    showIt = input("want to see result of each flip? (y/n)")
+    showIt = input("want to see result of each flip? (y/n)").lower()
     if showIt not in ["y","n"]:
         print("Use \'y\' or \'n\'")
         showIt()
@@ -21,7 +21,7 @@ def main():
             tails += 1
         else:
             heads += 1
-        if showresults == "y": print(side)
+        if showresults.startswith('y'): print(side)
         if tails == heads: print(f"At {x} flips, the number of heads and tail were equal at {heads} each")
     print(f"TAILS = {tails}/{times} | % -> {(tails/times) * 100}%")
     print(f"HEADS = {heads}/{times} | % -> {(heads/times) * 100}%")
