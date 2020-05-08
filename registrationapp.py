@@ -1,4 +1,3 @@
-
 def IsOldEnough():
     age = int(input("What is your age?: "))
     if age > 17:
@@ -7,13 +6,6 @@ def IsOldEnough():
         return False
 
 def main():
-
-    # parties = (('Republican','a major'),
-    #            ('Democratic','not a major'),
-    #            ('Independent','not a major'),
-    #            ('Libertarian','not a major'),
-    #            ('Green','not a major')
-    #            )
     parties = {
         "Republican": 'a major',
         "Democratic": 'not a major',
@@ -21,7 +13,6 @@ def main():
         "Libertarian": 'not a major',
         "Green": 'not a major'
     }
-
     name = input("Enter your name: ")
     if IsOldEnough():
         print(f"Congratulations {name.capitalize()}! You are old enough to vote!")
