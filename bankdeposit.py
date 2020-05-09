@@ -1,8 +1,4 @@
 def currInfo(info):
-    # print("Current Account Information")
-    # print(f"Name: {info[name].capitalize()}")
-    # print(f"Savings: ${info[savings]}")
-    # print(f"Checking: ${info[checking]}")
     return (f"""=====================\nCurrent Account Information\nName: {info['name'].capitalize()}\nSavings: ${info['savings']}\nChecking: ${info['checking']}\n======================""")
 
 def main():
