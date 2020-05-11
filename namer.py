@@ -2,11 +2,6 @@ from os import rename, listdir, mkdir
 from shutil import copyfile
 PATH = input("COPY PATH: ")
 PathToFile = input("Path to name file: ")
-howMany = int(input("How many photos do you want to assign to one title? "))
-specifier = input("What are specifiers? (separated by space)")
-specifiers = specifier.split()
-
-
 
 with open(PathToFile,"r") as f:
     data = f.readlines()
@@ -27,13 +22,13 @@ except FileExistsError:
     print("Directory \'copied\' already exists")
 
 files = sorted(listdir(PATH))
-# counter = 0
+counter = 0
 for x in processed:
     name = "_".join(x)
     for i in range(howMany):
-        # if counter % 2 == 0:
-        #     copyfile(PATH + "/" + files[counter],f"{PATH}/copied/{name}_gora.jpeg")
-        #     counter += 1
-        # else:
-        #     copyfile(PATH + "/" + files[counter],f"{PATH}/copied/{name}_dol.jpeg")
-        #     counter += 1
+        if counter % 2 == 0:
+            copyfile(PATH + "/" + files[counter],f"{PATH}/copied/{name}_gora.jpeg")
+            counter += 1
+        else:
+            copyfile(PATH + "/" + files[counter],f"{PATH}/copied/{name}_dol.jpeg")
+            counter += 1
