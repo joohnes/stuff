@@ -48,7 +48,7 @@ def main():
     except FileExistsError as e:
         cprint(f"Could not create new files!","red")
         raise FileExistsError
-    cprint("Successfully created new files!", "green")
+    cprint(f"Successfully created {counter + 1} files!", "green")
 
 if __name__ == "__main__":
     main()
