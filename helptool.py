@@ -1,9 +1,11 @@
 from os import remove, listdir
 from termcolor import cprint
 
+
 def deleteFiles(path, selected):
     for i in selected:
         remove(f"{PATH}/{i}")
+
 
 def main():
     PATH = input("COPY FULL PATH: ")
@@ -21,6 +23,7 @@ def main():
         cprint("Could not delete those files.", "red")
         exit()
     cprint(f"{len(selectedFiles)} deleted successfully", "green")
+
 
 if __name__ == '__main__':
     main()

@@ -52,12 +52,12 @@ def getInput():
 def hasWon():
     if gameboard["1"] == gameboard["2"] == gameboard["3"] != "_":
         showGameboard()
-        cprint(f"{gameboard['1'][5:-4]} has won the game!","green") # 1 -
+        cprint(f"{gameboard['1'][5:-4]} has won the game!", "green") # 1 -
         return False
 
     if gameboard["4"] == gameboard["5"] == gameboard["6"] != "_":
         showGameboard()
-        cprint(f"{gameboard['4'][5:-4]} has won the game!","green") # 2 -
+        cprint(f"{gameboard['4'][5:-4]} has won the game!", "green") # 2 -
         return False
 
     if gameboard["7"] == gameboard["8"] == gameboard["9"] != "_":

@@ -5,6 +5,7 @@ def IsOldEnough():
     else:
         return False
 
+
 def main():
     parties = {
         "Republican": 'a major',
@@ -15,12 +16,14 @@ def main():
     }
     name = input("Enter your name: ")
     if IsOldEnough():
-        print(f"Congratulations {name.capitalize()}! You are old enough to vote!")
+        print(
+            f"Congratulations {name.capitalize()}! You are old enough to vote!")
         print("Here is a list of political parties to join:")
         for x in parties:
             print(f"    - {x}")
         print("\n")
-        choice = input("What party would you like to join? : ").lower().capitalize()
+        choice = input(
+            "What party would you like to join? : ").lower().capitalize()
         if choice in parties:
             print(f"You have joined the {choice} party!")
             print(f"This is {parties[choice]} party.")
@@ -28,6 +31,7 @@ def main():
             print("there is no such party.")
     else:
         print("You are too young to vote.")
+
 
 if __name__ == "__main__":
     main()
