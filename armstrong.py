@@ -8,5 +8,3 @@ def armstrong(number: int):
 print(f"{armstrong(6)}")
 print(f"{armstrong(407)}")
 print(f"{armstrong(2278)}")
-
-
