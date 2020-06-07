@@ -14,8 +14,8 @@
 
 def prodExceptSelf(inputArray):
     finalArray = []
-    for num in inputArray
-    slic = inputArray[:num] + inputArray[num+1:]
+    for num in inputArray:
+        slic = inputArray[:num] + inputArray[num+1:]
 
 
 arr = [1, 2, 3, 4, 5, 6, 7, 8, 9]
